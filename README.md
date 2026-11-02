@@ -1,4 +1,4 @@
-# retrieval_calibration_study_0d33c9f2
+# retrieval_marginal_gain_calibration
 
 （检索结果的边际增益场景）当检索结果的边际增益出现必要冗余被误判时，结论还站得住吗？用检索与排序质量界定可接受的偏差范围。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python retrieval_calibration_study_0d33c9f2.py --help
-python retrieval_calibration_study_0d33c9f2.py --input sample.txt
-python retrieval_calibration_study_0d33c9f2.py --input sample.txt --json
+python retrieval_marginal_gain_calibration.py --help
+python retrieval_marginal_gain_calibration.py --input sample.txt
+python retrieval_marginal_gain_calibration.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「校准研究」使用分隔符 `（无）` 区分标签与载荷。
@@ -50,7 +50,7 @@ python retrieval_calibration_study_0d33c9f2.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python retrieval_calibration_study_0d33c9f2.py --input sample.txt --json`；
+2. 运行 `python retrieval_marginal_gain_calibration.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
